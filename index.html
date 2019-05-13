@@ -6,11 +6,18 @@
  <meta name="viewport" content="width=device-width, initial-scale-1">
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
  <style>
+
+.icon
+{
+  padding: .3em;
+  color: white;
+}
 
 .resume
 {
@@ -58,7 +65,41 @@
 }
 #intro 
 {
-    /* text-align: center; */
+    text-align: center;
+    padding-top: 50%;
+
+    padding-bottom: 50%;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    animation: fadein 3s;
+}
+
+@keyframes fadein
+{
+  from 
+  {
+    opacity: 0;
+  }
+
+  to
+  {
+    opacity: 1;
+  }
+}
+
+#outro
+{
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+
+  color: white;
+
+  
+}
+
+#scrollbtn
+{
+  color: white;
 }
 
 .card
@@ -88,19 +129,29 @@
 #body
 {
 
-  /* background: #bdc3c7; 
-background: -webkit-linear-gradient( bottom, #2c3e50, #bdc3c7);  
-background: linear-gradient( bottom, #2c3e50, #bdc3c7); */
 
-/* This one works */
-/* background: #D3959B;  
-background: -webkit-linear-gradient(to right, #BFE6BA, #D3959B); 
-background: linear-gradient(to right, #BFE6BA, #D3959B);  */
+ 
+  background: #bdc3c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
-background: #283048;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right , #859398 , #283048 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -111,6 +162,42 @@ background: linear-gradient(to right , #859398 , #283048 ); /* W3C, IE 10+/ Edge
 
 
  </style>
+
+ <script>
+ 
+//  $("#scrollbtn").click(function() 
+//  {
+//     $([document.documentElement, document.body]).animate({
+//         scrollBottom: $("#outro").offset().bottom
+//     }, 2000);
+// });
+
+$(document).ready(function() //Need this for all Jquery, somewhat like main method
+{
+
+
+  $("#scrollbtn").click(function()
+  {
+
+    $('html, body').animate({
+        scrollTop: ($('#nav-bar').offset().top)
+      },500);
+
+
+  //console.log("Hello World");
+
+
+
+
+  });
+  
+  // $('html, body').animate({
+  //   scrollTop: ($('#outro').offset().top)
+  // },500);
+
+}); 
+ 
+ </script>
 </head>
 <body id="body">
 
@@ -120,16 +207,18 @@ background: linear-gradient(to right , #859398 , #283048 ); /* W3C, IE 10+/ Edge
 
         <!-- Title/Intro -->
         <div id = "intro">
-            <h1>Brandon Henry</h1>
-            <p>My portfolio</p>
+            <h1> &ltBrandon Henry&gt</h1>
+            <p>Online Portfolio</p>
+             <a href="#"> <i class="fas fa-arrow-circle-down fa-2x" id="scrollbtn"></i></a>
 
         </div>
 
+    
         <!-- Nav Bar -->
         <div id = "nav-bar">
 
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                        <a class="navbar-brand" href="#">Brandon Henry:</a>
+                        <a class="navbar-brand" href="#"> <i class="fas fa-desktop"></i> </a>
                         <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                         </button> -->
@@ -139,23 +228,19 @@ background: linear-gradient(to right , #859398 , #283048 ); /* W3C, IE 10+/ Edge
                               <a class="nav-link" href="#">Resume <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                    <a class="nav-link" href="#">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Awards & Certifs.</a>
-                            </li>
-                            <li class="nav-item">
                               <a class="nav-link" href="#">Recomendations</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link disabled" href="#">About</a>
+                              <a class="nav-link" href="#">About</a>
                             </li>
                           </ul>
 
                             <!-- Right buttons(Nested in navbar) -->
-                          <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#"><span class="gl yphicon glyphicon-user"></span> Sign Up</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                            <!-- Make Responsive -->
+                          <ul class="nav navbar-nav navbar-right" style="padding-left: 60%;"> 
+                            <li>   <a href ="https://www.linkedin.com/in/brandon-henry-95427a138/">  <i class="icon fab fa-linkedin-in fa-2x"></i> </a> </li>
+                            <br/>
+                            <li> <a href ="https://github.com/bhenry1">  <i class="icon fab fa-github fa-2x"></i> </i> </a> </li>
                         </ul>
                         </div>
                       </nav>
@@ -520,11 +605,17 @@ background: linear-gradient(to right , #859398 , #283048 ); /* W3C, IE 10+/ Edge
 
 
         </div>
+        <br/>
+        <br/>
 
+        <div id="outro"> 
 
-
-
+       
+        <h1> &lt/Brandon Henry&gt</h1>
+      </div>
     </div>
+
+    
 
 
 
