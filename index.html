@@ -112,7 +112,7 @@
 
 .card
 {
-  margin: 0 auto; /* Added */
+        margin: 0 auto; /* Added */
         float: none; /* Added */
         margin-bottom: 10px; /* Added */
         
@@ -120,16 +120,19 @@
 
 .card-img-top
 {
-  width: 100%;
-  height: 100%;
+  object-fit: cover;
+  width: 450px;
+  height: 400px;
+ margin: auto;
 }
 
 
 #Brandon
 {
     border-radius: 70%;
-    width: 300px;
-    height: 300px;
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
     border: 6px solid black;
     /* box-shadow: 0px 0px 0px 10px black; */
     border-radius: 50%;
@@ -262,7 +265,7 @@ $(document).ready(function() //Need this for all Jquery, somewhat like main meth
          
          <!-- Resume Header/Intro -->
           <div id="resume-intro">
-                <img src="Images/Grad.jpg" alt="" id="Brandon"/>
+                <img src="Images/Grad.png" alt="" id="Brandon"/>
                 <h2>Brandon Henry</h2>
 
                     <p> <b>City:</b> Lawrenceville, GA •  <b>Phone:</b>770-882-5191 •  <b>Email:</b> <a href = "mailto: bhenry2@ggc.edu">bhenry2@ggc.edu </a></p>
@@ -273,13 +276,15 @@ $(document).ready(function() //Need this for all Jquery, somewhat like main meth
 
                   
                     <h2>Objective</h2>
-                    <p style="text-align:left">
+                    <p style="margin-left: 150px;
+                              margin-right: 150px;">
                     I'm Brandon!
                     A recent grad from Georgia Gwinnett College driven to build long term relationships with an employer.
                     I'm positive, motivated, and excited to meet the needs of customers, co-workers, and employers alike.
                     I'm hoping to gain valuable experience in the Software industry!
                     </p>
                     <hr/>
+                    
                    
 
 
@@ -370,8 +375,22 @@ $(document).ready(function() //Need this for all Jquery, somewhat like main meth
                       <hr/>
                       <div class="card-body">
                         <u> <b> <h5 class="card-title"> Text Based Adventure Game</h5> </b> </u>
-                        <p class="card-text">Lead a student software developer group to create a text-based adventure game with a GUI. 
-                          We followed the <i>waterfall methodology</i> to create this product</p>
+
+                        <ul style="text-align: left;">
+                         <li>  Lead a student software developer group to create a text-based adventure game.</li>
+                         <br/>
+                         <li>  Followed the <i>Waterfall methdology </i> </li>
+
+                        </ul>
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        <hr/>
+
+
+
+                   
                      
                         <b><p class="created-with">Created with:</b> Java, Java(FX), <a href="https://gluonhq.com/products/scene-builder/"> Scene Builder</a> </p>
                         <a href="https://github.com/bhenry1/SuperHeroSquad2017Section3" class="btn btn-primary">View Repo</a>
@@ -383,14 +402,23 @@ $(document).ready(function() //Need this for all Jquery, somewhat like main meth
                 
                   <div class="card h-100" style="width: 30rem;">
                       <img class="card-img-top" src="Images/emailGuard.png" alt="">
+                      <hr/>
                      
                       <div class="card-body">
                         <u> <b><h5 class="card-title">Email Guardian</h5></b></u>
-                        <p class="card-text">
-                            Developed a web-add in for Microsoft Outlook.  The add-in detects words it deems as "inappropriate", then warns the user before they send out the email.
-                            Worked with another professor at the University as a client, using the <i>Agile Methodolgy</i>
-                            to elicit requirements, produce prototypes, and work around a deadline.
-                        </p>
+                       
+                       
+                        <ul style="text-align: left;">
+                            <li> Developed a web-add in for Microsoft Outlook that filters out "Inappropriate" Emails. </li>
+                            <br/>
+                            <li> Worked with another professor at the University as a client.  </li>
+                            <br/>
+                            <li> Followed the <i> Agile Methodolgy</i> to elicit requirements, produce prototypes, and work around a deadline.  </li>
+
+   
+                           </ul>
+
+
                         <hr/>
                         <b><p class="created-with">Created with:</b> HTML, CSS, and JavaScript </p>
                         <a href="https://github.com/soft-eng-practicum/emailGuard" class="btn btn-primary">View Repo</a>
@@ -430,14 +458,24 @@ $(document).ready(function() //Need this for all Jquery, somewhat like main meth
                 
                           <div class="card h-100" style="width: 30rem;" >
                               <img class="card-img-top" src="Images/RR.gif" alt="">
+                              <hr/>
                             
                               <div class="card-body">
                                 <u> <h5 class="card-title">Rocket Rider</h5> </u>
-                                <p class="card-text">
-                                    Developed a game targeted to expand interest in IT among underrepresented groups in computing, Including young girls, and minorities. We also Held Workshops in low-level IT classes in which we taught programming concepts and guided 
-                                    students to make changes to our game. The game was developed in Processing , a "Programming sketchbook" That displays code output in a visual manner. The game was coded in Java using object-oriented concepts
-                                </p>
-                                <hr/>
+                               
+
+
+                                <ul style="text-align: left;">
+                                    <li> Developed a game targeted to expand interest in IT.</li>
+                                    <br/>
+                                    <li> The game was developed in Processing , a "Programming sketchbook" That displays code output in a visual manner.  </li>
+                                    <br/>
+                                    <li> The game was coded in Java using object-oriented concepts </li>
+        
+           
+                                   </ul>
+                                  <hr/>
+
                                 <b><p class="created-with">Created with:</b> Java, <a href="https://processing.org/"> Processing </a> </p>
                                 <a href="https://github.com/bhenry1/Rocket-Rider" class="btn btn-primary">View Repo</a>
                               </div>
@@ -451,13 +489,25 @@ $(document).ready(function() //Need this for all Jquery, somewhat like main meth
                 
                           <div class="card h-100" style="width: 30rem;">
                               <img class="card-img-top" src="Images/GGCSocialMedia.svg" alt="">
+                              <hr/>
                            
                               <div class="card-body">
                                 <u> <h5 class="card-title">GGC Social Media</h5></u>
-                                <p class="card-text">
-                                    Laid the ground work for a mobile social media platform for my university. We Used Ionic app development framework to ensure a cross platform Android/Ios release. 
-                                    Collaborated with a team of 4, with Git-Hub. The  front end was created with Typescript, AngularJS, HTML, and CSS The app uses Google's Fire Base database service as the back end
-                                </p>
+
+                                    <ul style="text-align: left;">
+                                    <li> Laid the ground work for a mobile social media platform for my university </li>
+                                    <br/>
+                                    <li> Used Ionic app development framework to ensure a cross platform Android/Ios release. </li>
+                                    <br/>
+                                    <li> Front end: Typescript, AngularJS, HTML, and CSS </li>
+                                    <br/>
+                                    <li> Back end:  Google Fire Base</li>
+
+        
+           
+                                   </ul>
+
+
                                 <hr/>
                                 <b><p class="created-with">Created with:</b> <a href="https://ionicframework.com/"> Ionic Framework</a>, Typescript, AngularJS, HTML, CSS,  <a href="https://firebase.google.com/"> Google Firebase </a> </p>
                                 <a href="https://github.com/rwprice31/GGCSocialMedia" class="btn btn-primary">View Repo</a>
@@ -484,11 +534,25 @@ $(document).ready(function() //Need this for all Jquery, somewhat like main meth
                 
                           <div class="card h-100" style="width: 30rem;">
                               <img class="card-img-top" src="Images/Pomg2.png" alt="">
+                              <hr/>
                         
                               <div class="card-body">
                                 <u> <h5 class="card-title">Pong</h5></u>
-                                <p class="card-text">Using Unity as part of a Game Devlopment course, we were tasked with re-creating the classic arcade game, Pong.
-                                  Unity uses a collection of GameObjects that can be manipulated with C# Scripts</p>
+
+
+
+
+                                    <ul style="text-align: left;">
+                                    <li> Re-created the classic arcade game Pong, using Unity. </li>
+                                    <br/>
+                                    <li> Unity uses a collection of GameObjects that can be manipulated with C# Scripts  </li>
+          
+                                   </ul>
+
+
+
+
+
                                 <hr/>
                                 <b><p class="created-with">Created with:</b> C#, <a href="https://unity.com/">Unity</a> </p>
                                 <a href="https://github.com/bhenry1/Pong" class="btn btn-primary">View Repo</a>
@@ -501,13 +565,22 @@ $(document).ready(function() //Need this for all Jquery, somewhat like main meth
                 
                           <div class="card h-100" style="width: 30rem;">
                               <img class="card-img-top" src="Images/MG2.png" alt="">
+                              <hr/>
                          
                               <div class="card-body">
                                 <u> <h5 class="card-title">Mobile Game</h5> </u>
-                                <p class="card-text">
-                                  Another project in the Game Devlopment course was to create a Unity Game targeted for the Android platform. The game was to take advantage of an androids phone's gyroscope and accelerometer.
-                                  We were in charge of building, deploying, and testing our game to the Android device.
-                                </p>
+
+                                <ul style="text-align: left;">
+                                    <li> Created mobile game which uses a  gyroscope and accelerometer</li>
+                                    <br/>
+                                    <li> We were in charge of building, deploying, and testing our game to the Android device.  </li>
+          
+                                   </ul>
+
+                            
+
+
+
                                 <hr/>
                                 <b><p class="created-with">Created with:</b> C#, <a href="https://unity.com/">Unity</a> </p>
                                 <a href="https://github.com/bhenry1/Hill-Slide" class="btn btn-primary">View Repo </a>
@@ -550,7 +623,7 @@ $(document).ready(function() //Need this for all Jquery, somewhat like main meth
                           <img class="card-img-top" src="Images/Diploma.jpg" alt="">
                    
                           <div class="card-body">
-                            <u> <h5 class="card-title">Bachlor of Science</h5> </u>
+                            <u> <h5 class="card-title">Bachelor of Science</h5> </u>
                             <p class="card-text"> In Software Devlopment, issued May 2019  from
                               <br/> <b> Georgia Gwinnett College </b> </p>
                             <a href="https://www.ggc.edu/" class="btn btn-primary">GGC Website</a>
