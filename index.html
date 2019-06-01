@@ -3,7 +3,7 @@
 <head>
  <title>Brandon Henry</title>
  <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"> 
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -148,27 +148,33 @@ background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  /* Chrome 10-
 background: linear-gradient(to bottom, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
+#test
+{
+  background-color: Transparent;
+    background-repeat:no-repeat;
+    color: white;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+
+@media only screen and (min-width: 767px) 
+{
+  #test
+  {
+    display: block;
+   
+  }
+  #test
+  {
+    display: none;
+    
+  }
+}
 
 
 
@@ -223,13 +229,21 @@ $(document).ready(function() //Need this for all Jquery, somewhat like main meth
             <p>Online Resume</p>
              <!-- <a href="#"> <i class="fas fa-arrow-circle-down fa-2x" id="scrollbtn"></i></a> -->
 
+<!--              
+        <button id="test">
+          <i class="fas fa-bars"></i>  Menu
+        </button> -->
+
         </div>
+
+
 
     
         <!-- Nav Bar -->
         <div id = "nav-bar">
 
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                  <!-- navbar Expand lg was heree -->
+                <nav class="navbar navbar-expand navbar-dark bg-dark" id="mynavBar">
                         <a class="navbar-brand" href="#"> <i class="fas fa-desktop"></i> </a>
                         <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
@@ -296,7 +310,7 @@ $(document).ready(function() //Need this for all Jquery, somewhat like main meth
             <div class="row">
 
        
-              <div class="col-md" style="text-align:left; padding-left: 20%">
+              <div class="col" style="text-align:left; padding-left: 20%">
               <!-- <u><h5>Technical</h5></u> -->
 
               
@@ -335,7 +349,7 @@ $(document).ready(function() //Need this for all Jquery, somewhat like main meth
          
       
            
-            <div class="col-md" style="text-align:left;">
+            <div class="col" style="text-align:left;">
 
               <ul style="text-align:left">
                 <u> <h5>Soft Skills</h5> </u>
@@ -366,10 +380,10 @@ $(document).ready(function() //Need this for all Jquery, somewhat like main meth
                 <h2>Projects</h2>
 
               <div class="row">
-                  <div class="col-md d-flex align-items-stretch">
+                  <div class="col d-flex align-items-stretch">
                 
 
-              <div class="col-md">
+              <div class="col">
 
                   <div class="card h-100" style="width: 30rem;">
                       <img class="card-img-top" src="Images/Text-Based-Adv.png" alt="">
@@ -399,7 +413,7 @@ $(document).ready(function() //Need this for all Jquery, somewhat like main meth
                     </div>
               </div>
 
-             <div class="col-md ">
+             <div class="col ">
                 
                   <div class="card h-100" style="width: 30rem;">
                       <img class="card-img-top" src="Images/emailGuard.png" alt="">
@@ -428,7 +442,7 @@ $(document).ready(function() //Need this for all Jquery, somewhat like main meth
               </div>
 
               <!-- 
-              <div class="col-md ">
+              <div class="col ">
                 
                   <div class="card" style="width: 18rem;">
                       <img class="card-img-top" src="https://images.techhive.com/images/article/2015/03/unity-logo-100571261-large.jpg" alt="">
@@ -452,10 +466,10 @@ $(document).ready(function() //Need this for all Jquery, somewhat like main meth
               <br/>
 
               <div class="row">
-                  <div class="col-md d-flex align-items-stretch">
+                  <div class="col d-flex align-items-stretch">
                    
 
-                      <div class="col-md ">
+                      <div class="col ">
                 
                           <div class="card h-100" style="width: 30rem;" >
                               <img class="card-img-top" src="Images/RR.gif" alt="">
@@ -486,7 +500,7 @@ $(document).ready(function() //Need this for all Jquery, somewhat like main meth
 
 
                          
-                       <div class="col-md ">
+                       <div class="col ">
                 
                           <div class="card h-100" style="width: 30rem;">
                               <img class="card-img-top" src="Images/GGCSocialMedia.svg" alt="">
@@ -529,9 +543,9 @@ $(document).ready(function() //Need this for all Jquery, somewhat like main meth
                 <br/>
 
                 <div class="row">
-                  <div class="col-md d-flex align-items-stretch">
+                  <div class="col d-flex align-items-stretch">
                       
-                      <div class="col-md ">
+                      <div class="col ">
                 
                           <div class="card h-100" style="width: 30rem;">
                               <img class="card-img-top" src="Images/Pomg2.png" alt="">
@@ -562,7 +576,7 @@ $(document).ready(function() //Need this for all Jquery, somewhat like main meth
                       </div>
 
 
-                      <div class="col-md ">
+                      <div class="col ">
                 
                           <div class="card h-100" style="width: 30rem;">
                               <img class="card-img-top" src="Images/MG2.png" alt="">
@@ -613,12 +627,12 @@ $(document).ready(function() //Need this for all Jquery, somewhat like main meth
             <h2>Education</h2>
 
             <div class="row">
-                <div class="col-md d-flex align-items-stretch">
+                <div class="col d-flex align-items-stretch">
 
          
                                 
 
-                  <div class="col-md" class="cards">
+                  <div class="col" class="cards">
                 
                       <div class="card h-100" style="width: 30rem;">
                           <img class="card-img-top" src="Images/Diploma.jpg" alt="">
@@ -644,14 +658,14 @@ $(document).ready(function() //Need this for all Jquery, somewhat like main meth
               <h2>Awards & Certifications</h2>
 
               <div class="row">
-                  <div class="col-md d-flex align-items-stretch">
+                  <div class="col d-flex align-items-stretch">
 
 
 
              
 
 
-                    <div class="col-md" class="cards">
+                    <div class="col" class="cards">
                 
                         <div class="card h-100" style="width: 30rem;">
                             <img class="card-img-top" src="Images/Cert.PNG" alt="">
@@ -668,7 +682,7 @@ $(document).ready(function() //Need this for all Jquery, somewhat like main meth
 
 
                     
-                  <div class="col-md" class="cards">
+                  <div class="col" class="cards">
                 
                       <div class="card h-100" style="width: 30rem;">
                           <img class="card-img-top" src="Images/Award.jpg" alt="">
@@ -696,10 +710,10 @@ $(document).ready(function() //Need this for all Jquery, somewhat like main meth
         <h2>Volunteering </h2>
 
         <div class="row">
-            <div class="col-md d-flex align-items-stretch">
+            <div class="col d-flex align-items-stretch">
 
                     <!-- Workshops -->
-                <div class="col-md" class="cards">
+                <div class="col" class="cards">
 
                     <div class="card h-100" style="width: 30rem;">
                         <img class="card-img-top" src="Images/Workshops.jpg" alt="">
@@ -717,7 +731,7 @@ $(document).ready(function() //Need this for all Jquery, somewhat like main meth
 
 
                 <!-- Middle school outreach -->
-                <div class="col-md" class="cards">
+                <div class="col" class="cards">
 
                     <div class="card h-100" style="width: 30rem;">
                         <img class="card-img-top" src="Images/S3.jpg" alt="">
@@ -749,12 +763,12 @@ $(document).ready(function() //Need this for all Jquery, somewhat like main meth
 
 
               <div class="row">
-                  <div class="col-md d-flex align-items-stretch">
+                  <div class="col d-flex align-items-stretch">
 
 
 
                     <!-- Atlanta Science Festival -->
-                <div class="col-md" class="cards">
+                <div class="col" class="cards">
 
                     <div class="card h-100" style="width: 30rem;">
                         <img class="card-img-top" src="Images/ASF.jpg" alt="">
